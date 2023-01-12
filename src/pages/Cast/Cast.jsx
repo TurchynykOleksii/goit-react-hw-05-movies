@@ -27,6 +27,7 @@ export const Cast = () => {
                 src={
                   profile_path ? `${BASE_URL_IMG}${profile_path}` : placeholder
                 }
+                alt={name}
               />
               <div>
                 <p>
