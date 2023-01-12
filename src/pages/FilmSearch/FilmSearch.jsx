@@ -11,7 +11,7 @@ import { BASE_URL_IMG } from './../../utils/hrefImg';
 
 export const FilmSearch = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const query = searchParams.get('q') ?? '';
+  const query = searchParams.get('query') ?? '';
   const [film, setFilm] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const FilmSearch = () => {
       return;
     }
     getQueryByMovie(query).then(setFilm).catch(console.log);
-  }, []);
+  }, [query]);
 
   const onChangeHandler = e => {
     const { value } = e.target;

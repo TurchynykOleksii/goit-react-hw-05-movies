@@ -13,7 +13,7 @@ export const FilmInfo = () => {
 
   useEffect(() => {
     getMovieDetails(filmId).then(setFilm).catch(console.log);
-  }, []);
+  }, [filmId]);
 
   if (!film) return;
 
