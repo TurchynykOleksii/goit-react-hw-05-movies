@@ -1,0 +1,31 @@
+.header {
+  padding: 15px 0;
+  background-color: #0000c9;
+}
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+.link {
+  position: relative;
+  padding: 10px 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.link:before {
+  content: '';
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width 250ms ease-in;
+}
+
+.link:hover:before {
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+.form {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 400px;
+  display: flex;
+}
+.input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btn {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.searchList {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}

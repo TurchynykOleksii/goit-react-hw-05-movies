@@ -1,0 +1,11 @@
+.filmItem {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  word-wrap: break-word;
+}
+.itemList {
+  max-width: 250px;
+}

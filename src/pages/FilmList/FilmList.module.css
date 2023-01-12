@@ -1,0 +1,14 @@
+.main {
+  padding: 30px 0;
+}
+
+.filmList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.headline {
+  text-align: center;
+}
