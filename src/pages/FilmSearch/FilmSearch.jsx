@@ -35,8 +35,6 @@ export default function FilmSearch() {
     getQueryByMovie(query).then(setFilm).catch(console.log);
   };
 
-  console.log(film);
-
   return (
     <>
       <div className="wrapper">
