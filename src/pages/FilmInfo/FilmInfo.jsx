@@ -6,7 +6,7 @@ import { BASE_URL_IMG } from '../../utils/hrefImg';
 import { Loader } from 'components/Loader';
 import css from './FilmInfo.module.css';
 
-export const FilmInfo = () => {
+export default function FilmInfo() {
   const [film, setFilm] = useState(null);
   const { filmId } = useParams();
   const location = useLocation();
@@ -70,4 +70,4 @@ export const FilmInfo = () => {
       </div>
     </div>
   );
-};
+}

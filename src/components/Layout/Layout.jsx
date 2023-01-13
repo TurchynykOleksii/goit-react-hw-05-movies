@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Loader } from '../Loader';
 import { AppBar } from '../AppBar';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <div>
       <AppBar />
@@ -13,3 +13,4 @@ export const Layout = () => {
     </div>
   );
 };
+export default Layout;

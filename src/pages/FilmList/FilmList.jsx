@@ -4,12 +4,11 @@ import { FilmItem } from '../../components/FilmItem';
 import { BASE_URL_IMG, placeholder } from '../../utils/hrefImg';
 import css from './FilmList.module.css';
 
-export const FilmList = () => {
+export default function FilmList() {
   const [trendsFilm, setTrendsFilm] = useState([]);
   useEffect(() => {
     getMovieTranding().then(({ results }) => setTrendsFilm(results));
   }, []);
-  console.log(trendsFilm);
   return (
     <main className={css.main}>
       <div className="wrapper">
@@ -29,4 +28,4 @@ export const FilmList = () => {
       </div>
     </main>
   );
-};
+}

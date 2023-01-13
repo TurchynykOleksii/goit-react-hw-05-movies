@@ -9,7 +9,7 @@ import css from './FilmSearch.module.css';
 import { placeholder } from 'utils/hrefImg';
 import { BASE_URL_IMG } from './../../utils/hrefImg';
 
-export const FilmSearch = () => {
+export default function FilmSearch() {
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') ?? '';
   const [film, setFilm] = useState([]);
@@ -73,4 +73,4 @@ export const FilmSearch = () => {
       </div>
     </>
   );
-};
+}

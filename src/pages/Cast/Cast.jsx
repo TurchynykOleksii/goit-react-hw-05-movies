@@ -4,7 +4,7 @@ import { getCastId } from '../../services/api';
 import { BASE_URL_IMG, placeholder } from '../../utils/hrefImg';
 import css from './Cast.module.css';
 
-export const Cast = () => {
+export default function Cast() {
   const [cast, setCast] = useState(null);
   const { filmId } = useParams();
 
@@ -45,4 +45,5 @@ export const Cast = () => {
       )}
     </>
   );
-};
+}
+

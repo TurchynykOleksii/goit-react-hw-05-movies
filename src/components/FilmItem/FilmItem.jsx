@@ -1,4 +1,5 @@
 import { useLocation, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import css from './FilmItem.module.css';
 
 export const FilmItem = ({ title, href, children }) => {
@@ -11,4 +12,9 @@ export const FilmItem = ({ title, href, children }) => {
       </Link>
     </li>
   );
+};
+
+FilmItem.propTypes = {
+  href: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
