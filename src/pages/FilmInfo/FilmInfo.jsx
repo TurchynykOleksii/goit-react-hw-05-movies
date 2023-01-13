@@ -28,6 +28,7 @@ export default function FilmInfo() {
           <BiArrowBack />
           go back
         </Link>
+
         <div className={css.filmInfo}>
           <img src={`${BASE_URL_IMG}${poster_path}`} alt={title} />
           <div>
