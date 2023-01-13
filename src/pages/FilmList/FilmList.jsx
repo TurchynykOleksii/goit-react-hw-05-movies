@@ -9,7 +9,6 @@ export default function FilmList() {
   useEffect(() => {
     getMovieTranding().then(({ results }) => setTrendsFilm(results));
   }, []);
-  console.log(true);
   return (
     <main className={css.main}>
       <div className="wrapper">
